@@ -1,0 +1,2 @@
+Strict-Transport-Security
+X-Content-Type-Options
