@@ -30,26 +30,21 @@ func main() {
         color.Red("Unable to open "+*headerList+" please check to ensure this file exists.")
         panic(err)
     }
-   
-    // for _, header := range headers {
-    //     fmt.Println(header)
-    // }
 
     // Find Security Headers That Match
+    // headers = slice
+    // resp.Header = map
+    // fmt.Println(headers)
+    // fmt.Println("")
+    // fmt.Println(resp.Header)
+
     for _, header := range headers {
-        var found = ""
-        for k, _ := range resp.Header {
-            // fmt.Println(header)
-            if header == k {
-                found := "OK"
-            } else {
-                found := "MISSING"
-            }
+        _, ok := resp.Header[header]
+        if ok {
+          color.HiGreen(header + " - Found")
+        } else {
+          color.Red(header + " - Not Found")
         }
-        color.HiGreen(header + " %d\n",found)
-        // fmt.Print(k)
-        // fmt.Print(" : ")
-        // fmt.Println(v)
     }
 }
 
