@@ -1,2 +1,3 @@
 Strict-Transport-Security
 X-Content-Type-Options
+Not-Findable-Header-W00t
