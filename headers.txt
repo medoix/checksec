@@ -1,3 +1,5 @@
 Strict-Transport-Security
+Referrer-Policy
 X-Content-Type-Options
 Not-Findable-Header-W00t
+Set-Cookie
