@@ -25,6 +25,9 @@ gosecheaders -url domaintoscan.com
 
 To scan a list of URL's
 > you will need to create a scope.txt file with one URL per line
+> blah.com
+> blah2.com
+> bluh.com
 
 ```
 gosecheaders -scope /path/to/scope.txt
