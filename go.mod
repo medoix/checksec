@@ -1,6 +1,6 @@
-module gitlab.com/medoix/gosecheaders
+module github.com/medoix/checksec
 
-go 1.13
+go 1.16
 
 require (
 	github.com/fatih/color v1.7.0
